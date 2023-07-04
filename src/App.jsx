@@ -56,6 +56,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>CRUD OPERATIONS</h1>
       <Table rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
       <button onClick={() => setModalOpen(true)} className="btn">
         Add
