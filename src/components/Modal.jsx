@@ -5,7 +5,7 @@ import "./Modal.css";
 export const Modal = ({ closeModal, onSubmit, defaultValue }) => {
   const [formState, setFormState] = useState(
     defaultValue || {
-      page: "",
+      name: "",
       description: ""
 
     }
@@ -13,7 +13,7 @@ export const Modal = ({ closeModal, onSubmit, defaultValue }) => {
   const [errors, setErrors] = useState("");
 
   const validateForm = () => {
-    if (formState.page && formState.description) {
+    if (formState.name && formState.description) {
       setErrors("");
       return true;
     } else {
